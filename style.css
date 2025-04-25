@@ -1,0 +1,80 @@
+body {
+    background-color: beige;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin-right: 20%;
+    background-color: brown;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+#title, footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.highlight {
+    font-size: 1.2em;
+    color: lightpink;
+    font-weight: bold;
+}
+
+button {
+    background-color: lightgray;
+    border: 2px solid black;
+    color: black;
+    padding: 10px, 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: lightslategray;
+}
+
+#extraContainer {
+    background-color: #fff9b1;
+    padding: 20px;
+    margin-top: 15px;
+    border: 1px solid #e0c97f;
+    border-radius: 8px;
+    width: fit-content;
+    max-width: 90%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1em;
+    transform: rotate(-1deg);
+    transition: transform 0.2s ease;
+}
+
+#extraContainer::before {
+    content: "📌";
+    font-size: 1.2em;
+    position: relative;
+    margin-left: -25px;
+    margin-top: -5px;
+}
